@@ -1,2 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+
+    <dimen name="altologoGassapy">85dp</dimen>
+    <dimen name="tollbarAlto">30dp</dimen>
+    <dimen name="cardCornerRadius">4dp</dimen>
+    <dimen name="altoImageViewHome">250dp</dimen>
+    <dimen name="tamañoTituloHome">25sp</dimen>
+    <dimen name="marginHomeRightSubtitle">10dp</dimen>
+    <dimen name="marginHomeLetfSubtitle">80dp</dimen>
+    <dimen name="itemScheduleTitle">30sp</dimen>
+    <dimen name="itemScheduleSubTitle">20sp</dimen>
+
+
+
+
+
+</resources>

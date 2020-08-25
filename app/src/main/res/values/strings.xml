@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">AppPlatzi</string>
+    <string name="app_name">Gasappy</string>
+    <string name="inicio_frag_tv_calculos_vent">Calculos de ventilación</string>
+    <string name="inicio_frag_tv_calculos_vacios">Calculos de vacios internos</string>
+
+
+
 </resources>
