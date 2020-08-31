@@ -2,6 +2,13 @@
     <string name="app_name">Gasappy</string>
     <string name="inicio_frag_tv_calculos_vent">Calculos de ventilación</string>
     <string name="inicio_frag_tv_calculos_vacios">Calculos de vacios internos</string>
+    <string name="inicio_frag_detail_tv_calculos_trazado">El objetivo, es definir los parámetros básicos que
+se seguirán en cuanto a diseño, construcción, instalación,
+mantenimiento y operación de redes de distribución e instalaciones
+internas de gas, con el fin de garantizar la operación segura de los
+sistemas de distribución de gas natural y gas licuado del petróleo
+(G.L.P.).</string>
+
 
 
 

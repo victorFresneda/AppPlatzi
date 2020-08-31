@@ -15,63 +15,63 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:cardCornerRadius="@dimen/cardCornerRadius"
-            app:cardElevation="0dp">
-            
-            <LinearLayout
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/altoImageViewHome"
-                    android:src="@drawable/calvent"
-                    android:background="@color/colorPrimaryDark"/>
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="@color/design_default_color_primary"/>
-                <TextView
+                app:cardCornerRadius="@dimen/cardCornerRadius"
+                app:cardElevation="0dp">
+
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                   android:text="@string/inicio_frag_tv_calculos_vent"
-                    android:textStyle="bold"
-                    android:textSize="@dimen/tamañoTituloHome"
-                    android:textColor="@color/colorPrimaryDark"
-                    android:background="@color/colorText"
-                    android:layout_marginRight="@dimen/marginHomeRightSubtitle"
-                    android:layout_marginLeft="@dimen/marginHomeLetfSubtitle" />
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/altoImageViewHome"
+                        android:src="@drawable/calvent"
+                        android:background="@color/colorPrimaryDark"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/design_default_color_primary"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                       android:text="@string/inicio_frag_tv_calculos_vent"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/tamañoTituloHome"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:background="@color/colorText"
+                        android:layout_marginRight="@dimen/marginHomeRightSubtitle"
+                        android:layout_marginLeft="@dimen/marginHomeLetfSubtitle" />
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/altoImageViewHome"
-                    android:src="@drawable/vacuumicon"
-                    android:background="@color/colorPrimaryDark"/>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/altoImageViewHome"
+                        android:src="@drawable/vacuumicon"
+                        android:background="@color/colorPrimaryDark"/>
 
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="@color/design_default_color_primary"/>
-
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/inicio_frag_tv_calculos_vacios"
-                    android:textStyle="bold"
-                    android:textSize="@dimen/tamañoTituloHome"
-                    android:textColor="@color/colorPrimaryDark"
-                    android:background="@color/colorText"
-                    android:layout_marginRight="@dimen/marginHomeRightSubtitle"
-                    android:layout_marginLeft="@dimen/marginHomeLetfSubtitle" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/design_default_color_primary"/>
 
 
-            </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/inicio_frag_tv_calculos_vacios"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/tamañoTituloHome"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:background="@color/colorText"
+                        android:layout_marginRight="@dimen/marginHomeRightSubtitle"
+                        android:layout_marginLeft="@dimen/marginHomeLetfSubtitle" />
 
-        </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
 
     </LinearLayout>
 </ScrollView>
