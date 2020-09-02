@@ -9,7 +9,8 @@ internas de gas, con el fin de garantizar la operación segura de los
 sistemas de distribución de gas natural y gas licuado del petróleo
 (G.L.P.).</string>
 
-
+    <string name="inicio_frag_tv_descripcion_ventilación_directa">Cuando el espacio se comunica directamente con el exterior o cuando se comunica con el exterior mediante conductos verticales, cada abertura debe tener una area libre
+    </string>
 
 
 </resources>
