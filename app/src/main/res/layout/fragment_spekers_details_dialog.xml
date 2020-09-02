@@ -72,7 +72,7 @@
                             android:id="@+id/tvDetailCalculosDeTrazado"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/inicio_frag_detail_tv_calculos_trazado"
+                            android:text="@string/speakers_frag_details_tv_descripcion_ventilación_directa"
                             android:textSize="@dimen/itemScheduleSubTitle"
                             android:textColor="@color/colorPrimary"
                             android:gravity="center_horizontal"
