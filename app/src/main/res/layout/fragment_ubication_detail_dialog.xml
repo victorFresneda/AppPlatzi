@@ -29,17 +29,17 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
-                <RelativeLayout
+
                     android:layout_width="match_parent"
                     android:layout_height="200dp">
 
                     <ImageView
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/pipelines"
-                        android:scaleType="centerCrop" />
+                        android:layout_height="230dp"
+                        android:src="@drawable/fragment_ubication_geo"
+                        android:scaleType="fitXY" />
 
-                </RelativeLayout>
+
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
@@ -56,12 +56,93 @@
                             android:id="@+id/tvDetailCalculosDeTrazado"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/inicio_frag_detail_tv_calculos_trazado"
-                            android:textSize="@dimen/itemScheduleSubTitle"
+                            android:text="Ubicacion de la empresa"
+                            android:textSize="30dp"
+                            android:textStyle="bold"
                             android:textColor="@color/colorPrimary"
                             android:gravity="center_horizontal"
-                            android:layout_margin="15dp" />
+                            android:layout_margin="5dp" />
 
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="15dp">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_pin"/>
+
+                            <TextView
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Dirección"
+                                android:textSize="15dp"
+                                android:textColor="@color/colorPrimary"
+                                android:gravity="left"
+                                android:layout_margin="5dp" />
+
+
+                        </LinearLayout>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/colorPrimary"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="15dp">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_link"/>
+
+                            <TextView
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Sitio web"
+                                android:textSize="15dp"
+                                android:textColor="@color/colorPrimary"
+                                android:gravity="left"
+                                android:layout_margin="5dp" />
+
+
+                        </LinearLayout>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/colorPrimary"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="15dp">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_local_phone"/>
+
+                            <TextView
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Telefono"
+                                android:textSize="15dp"
+                                android:textColor="@color/colorPrimary"
+                                android:gravity="left"
+                                android:layout_margin="5dp" />
+
+
+                        </LinearLayout>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/colorPrimary"/>
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
