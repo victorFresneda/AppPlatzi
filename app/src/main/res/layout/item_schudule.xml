@@ -49,7 +49,7 @@
                 android:id="@+id/tvScheduleConferenceName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Nombre de la conferencia"
+                android:text="Hora de la visita"
                 android:textSize="20sp"
                 android:textColor="@color/colorPrimaryDark"
                 android:ellipsize="end"
@@ -59,7 +59,7 @@
                 android:id="@+id/tvScheduleConferenceSpeaker"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Speker name"
+                android:text="Nombre del inspector"
                 android:textSize="15sp"
                 android:textColor="@color/colorPrimary"
                 android:ellipsize="end"
@@ -67,12 +67,13 @@
 
             <TextView
                 android:id="@+id/tvItemSceduleTag"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Tag"
                 android:ellipsize="end"
                 android:lines="1"
-                android:textColor="#FFFFFF"/>
+                android:textColor="#FFFFFF"
+                android:background="@drawable/shape_topico"/>
 
         </LinearLayout>
 
