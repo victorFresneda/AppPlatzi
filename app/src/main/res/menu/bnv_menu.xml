@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+      android:id="@+id/navHomeFregment"
+      android:title="Inicio"
+      android:icon="@drawable/ic_stars" />
+    <item
+        android:id="@+id/navVentFregment"
+        android:title="Calculos de ventlación"
+        android:icon="@drawable/ic_house_vent" />
+    <item
+        android:id="@+id/navVaciosFregment"
+        android:title="Vacios internos"
+        android:icon="@drawable/ic_vacios" />
+    <item
+        android:id="@+id/navTrazadoFregment"
+        android:title="Calculos de trazado"
+        android:icon="@drawable/ic_build" />
+
+</menu>
