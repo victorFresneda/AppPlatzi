@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "244467289200",
+    "firebase_url": "https://gasappy-f3ab0.firebaseio.com",
+    "project_id": "gasappy-f3ab0",
+    "storage_bucket": "gasappy-f3ab0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:244467289200:android:927569038ff3a894abf8b5",
+        "android_client_info": {
+          "package_name": "com.appplatzi.conf"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "244467289200-gd5r9fjfbbu79nom07msbfrvgehdj3co.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.appplatzi.conf",
+            "certificate_hash": "23b76fb9f0e6aba554f7e2daa2a661f1e3503ad3"
+          }
+        },
+        {
+          "client_id": "244467289200-2iu79bu9kkkknevuvleqtltdq6m1jh2d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKUsgaFchvcog9r9BGibmtSNJtENdCVK4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "244467289200-2iu79bu9kkkknevuvleqtltdq6m1jh2d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
