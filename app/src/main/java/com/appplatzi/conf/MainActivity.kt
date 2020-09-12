@@ -2,8 +2,8 @@ package com.appplatzi.conf
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.appplatzi.conf.model.Conference
 import com.appplatzi.conf.model.Speaker
-import com.appplatzi.conf.model.conference
 import com.google.firebase.firestore.FirebaseFirestore
 import org.json.JSONArray
 import org.json.JSONObject
@@ -295,8 +295,7 @@ class MainActivity : AppCompatActivity() {
                     "                \"tag\" : \"Motivacional\",\n" +
                     "                \"title\" : \"Cómo desarrollar tu carrera profesional en tecnología\"\n" +
                     "            }\n" +
-                    "        ]"
-        )
+                    "        ]")
 
 
         val firebaseFirestore = FirebaseFirestore.getInstance()
@@ -313,20 +312,25 @@ class MainActivity : AppCompatActivity() {
             speaker.category = aux.getInt("category")
 
             firebaseFirestore.collection("speakers").document().set(speaker)
-
         }
-        for (i in 0 until jsonArr2.length()) {
 
-            val aux = jsonArr2.get(i) as JSONObject
-            var conference = conference()
-            conference.title = aux.getString("title")
-            conference.description = aux.getString("description")
-            conference.tag = aux.getString("tag")
-            val cal=Calendar.getInstance()
-            cal.timeInMillis=aux.getLong("datetime")*1000
+            for (i in 0 until jsonArr2.length()) {
 
-            firebaseFirestore.collection("speakers").document().set(conference)
+                val aux = jsonArr2.get(i) as JSONObject
+                var conference = Conference()
+                conference.title = aux.getString("title")
+                conference.description = aux.getString("description")
+                conference.tag = aux.getString("tag")
+                val cal=Calendar.getInstance()
+                cal.timeInMillis = aux.getLong("datetime") * 1000
+                conference.datetime=cal.time
+                conference.speaker = aux.getString("speaker")
 
-        }
+                firebaseFirestore.collection("conferences").document().set(conference)
+
+            }
+
+
+
     }
 }
