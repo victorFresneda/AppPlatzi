@@ -19,12 +19,12 @@ class FirestoreSevice {
         firebaseFirestore.firestoreSettings = settings
     }
 
-    fun getSpeakers(callback: Callback<List<Speaker>>){
+    fun getSpeakers(callback: Callback<List<Speaker>>) {
         firebaseFirestore.collection(SPEAKERS_COLLECTION_NAME)
             .orderBy("category")
             .get()
             .addOnSuccessListener { result ->
-                for (doc in result){
+                for (doc in result) {
                     var list = result.toObjects(Speaker::class.java)
                     callback.onSuccess(list)
                     break
@@ -32,13 +32,15 @@ class FirestoreSevice {
             }
     }
 
-    fun getSchedule(callback: Callback<List<Conference>>){
+    fun getSchedule(callback: Callback<List<Conference>>) {
         firebaseFirestore.collection(CONFERENCES_COLLECTION_NAME)
             .get()
             .addOnSuccessListener { result ->
-                for (doc in result){
+                for (doc in result) {
                     var list = result.toObjects(Conference::class.java)
                     callback.onSuccess(list)
                     break
+                }
+            }
     }
 }
