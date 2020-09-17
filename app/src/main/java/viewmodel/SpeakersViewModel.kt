@@ -1,24 +1,26 @@
 package viewmodel
 
+
 import android.telecom.Conference
 import androidx.lifecycle.MutableLiveData
+import com.appplatzi.conf.model.Speaker
 import com.appplatzi.conf.network.Callback
 import com.appplatzi.conf.network.FirestoreSevice
 import java.lang.Exception
 
-class ScheduleViewModel {
+class SpeakersViewModel {
     val firestoreService = FirestoreSevice()
-    var listSchedule:MutableLiveData<List<Conference>> = MutableLiveData()
+    var listSpeaker:MutableLiveData<List<Speaker>> = MutableLiveData()
     var isLoading = MutableLiveData<Boolean>()
 
     fun refresh (){
-        getScheduleFromFirebase()
+        getSpeakersFromFirebase()
     }
 
-    fun getScheduleFromFirebase(){
-        firestoreService.getSchedule(object:Callback<List<Conference>>  {
-            override fun onSuccess(result: List<Conference>?) {
-                listSchedule.postValue(result)
+    fun getSpeakersFromFirebase(){
+        firestoreService.getSpeakers(object:Callback<List<Speaker>>  {
+            override fun onSuccess(result: List<Speaker>?) {
+                listSpeaker.postValue(result)
                 prosessFinished()
 
             }
