@@ -1,4 +1,4 @@
-package view
+package com.appplatzi.conf.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
