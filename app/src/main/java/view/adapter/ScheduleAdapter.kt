@@ -37,6 +37,10 @@ class ScheduleAdapter(val scheduleListener: ScheduleListener ) : RecyclerView.Ad
         holder.tvConferenceHour.text = horaFormat
         holder.tvConferenceAMPM.text = simpleDateFormatAMPM.format(conference.datetime).toUpperCase()
 
+        holder.itemView.setOnClickListener {
+            scheduleListener.onConferenceClicked(conference, position)
+        }
+
     }
 
 
@@ -47,7 +51,7 @@ class ScheduleAdapter(val scheduleListener: ScheduleListener ) : RecyclerView.Ad
 
     }
     class ViewHolder(itemview: View):RecyclerView.ViewHolder(itemview){
-        val tvConferenceName = itemview.findViewById<TextView>(R.id.tvScheduleConferenceName)
+        val tvConferenceName: TextView = itemview.findViewById<TextView>(R.id.tvScheduleConferenceName)
         val tvConferenceSpeaker = itemview.findViewById<TextView>(R.id.tvScheduleConferenceSpeaker)
         val tvConferenceTag = itemview.findViewById<TextView>(R.id.tvItemScheduleTag)
         val tvConferenceHour = itemview.findViewById<TextView>(R.id.tvItemScheduleHour)
