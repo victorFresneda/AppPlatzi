@@ -43,8 +43,8 @@ class SpeakerAdapter(val speakerListener: SpeakerListener ) : RecyclerView.Adapt
 
     }
     class ViewHolder(itemview: View):RecyclerView.ViewHolder(itemview){
-        val tvConferenceName = itemview.findViewById<TextView>(R.id.tvScheduleConferenceName)
-        val tvConferenceSpeaker = itemview.findViewById<TextView>(R.id.tvScheduleConferenceSpeaker)
-        val tvConferenceTag = itemview.findViewById<TextView>(R.id.tvItemScheduleTag)
+        val tvSpeakersName = itemview.findViewById<TextView>(R.id.tvItemSpeakerName)
+        val tvSpeakerWork = itemview.findViewById<TextView>(R.id.tvItemSpeakerWord)
+        val ivSpeakerImage = itemview.findViewById<TextView>(R.id.ivItemSpeakerImage)
     }
 }

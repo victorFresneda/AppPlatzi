@@ -13,13 +13,14 @@
         android:orientation="vertical"
         android:background="@drawable/shape_parrafo">
         <ImageView
+            android:id="@+id/ivItemSpeakerImage"
             android:layout_width="match_parent"
             android:layout_height="@dimen/altoImageViewHome"
             android:src="@drawable/image_view_ventilacion_direct"
             android:layout_margin="10dp"
             />
         <TextView
-            android:id="@+id/tvSpeakerName"
+            android:id="@+id/tvItemSpeakerName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Ventilación directa"
@@ -33,7 +34,7 @@
 
 
         <TextView
-            android:id="@+id/tvSpeakerWord"
+            android:id="@+id/tvItemSpeakerWord"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Definicion segun ntc 3631 "
