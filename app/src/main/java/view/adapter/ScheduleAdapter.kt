@@ -4,7 +4,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import androidx.lifecycle.MutableLiveData
 import androidx.recyclerview.widget.RecyclerView
 import com.appplatzi.conf.R
 import com.appplatzi.conf.model.Conference
@@ -44,14 +43,14 @@ class ScheduleAdapter(val scheduleListener: ScheduleListener ) : RecyclerView.Ad
     }
 
 
-    fun uoDateData(data: List<Conference>) {
+    fun updateData(data: List<Conference>) {
         listConference.clear()
         listConference.addAll(data)
         notifyDataSetChanged()
 
     }
     class ViewHolder(itemview: View):RecyclerView.ViewHolder(itemview){
-        val tvConferenceName: TextView = itemview.findViewById<TextView>(R.id.tvScheduleConferenceName)
+        val tvConferenceName = itemview.findViewById<TextView>(R.id.tvScheduleConferenceName)
         val tvConferenceSpeaker = itemview.findViewById<TextView>(R.id.tvScheduleConferenceSpeaker)
         val tvConferenceTag = itemview.findViewById<TextView>(R.id.tvItemScheduleTag)
         val tvConferenceHour = itemview.findViewById<TextView>(R.id.tvItemScheduleHour)
