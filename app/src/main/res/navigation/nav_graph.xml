@@ -16,9 +16,9 @@
     </fragment>
     <fragment
         android:id="@+id/navVentFregment"
-        android:name="view.ui.fragments.EscheduleFragment"
+        android:name="view.ui.fragments.scheduleFragment"
         android:label="fragment_eschedule"
-        tools:layout="@layout/fragment_eschedule" >
+        tools:layout="@layout/fragment_schedule" >
         <action
             android:id="@+id/action_escheduleFragment_to_speakersFragment"
             app:destination="@id/navVaciosFregment" />

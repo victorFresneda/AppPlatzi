@@ -2,32 +2,35 @@ package view.ui.fragments
 
 import android.os.Bundle
 import android.telecom.Conference
+import android.telecom.Conferenceable
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.os.bundleOf
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 
 import com.appplatzi.conf.R
 import kotlinx.android.synthetic.main.fragment_schedule.*
 import view.adapter.ScheduleAdapter
+import view.adapter.ScheduleListener
 import viewmodel.ScheduleViewModel
 
 /**
  * A simple [Fragment] subclass.
  */
-class EscheduleFragment : Fragment() {
+class ScheduleFragment : Fragment(), ScheduleListener {
 
     private lateinit var schededuleAdapter: ScheduleAdapter
     private lateinit var viewModel: ScheduleViewModel
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
+        inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
+
         return inflater.inflate(R.layout.fragment_schedule, container, false)
     }
 
@@ -41,6 +44,7 @@ class EscheduleFragment : Fragment() {
 
         rvSchedule.apply {
             layoutManager = LinearLayoutManager(view.context, LinearLayoutManager.VERTICAL, false)
+            adapter = schededuleAdapter
 
         }
         observeViewModel()
@@ -49,6 +53,16 @@ class EscheduleFragment : Fragment() {
         viewModel.listSchedule.observe(this, Observer <List<Conference>>{ schedule ->
             schededuleAdapter.updateData(schedule)
         })
+
+        viewModel.listSchedule.observe(this, Observer<Boolean>{
+            if (it != null)
+                rlBaseSchedule.visibility = View.INVISIBLE
+        })
+    }
+
+    override fun onConferenceClicked(conference: com.appplatzi.conf.model.Conference, position: Int) {
+         val bundle = bundleOf("conference" to conference)
+        findNavController().navigate(R.id.scheduleDetailFragmentsDialog, bundle)
     }
 
 
