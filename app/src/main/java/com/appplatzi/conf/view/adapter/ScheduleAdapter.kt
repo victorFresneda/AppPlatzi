@@ -1,4 +1,4 @@
-package view.adapter
+package com.appplatzi.conf.view.adapter
 
 import android.view.LayoutInflater
 import android.view.View

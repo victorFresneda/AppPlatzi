@@ -1,8 +1,7 @@
-package view.ui.fragments
+package com.appplatzi.conf.view.ui.fragments
 
 import android.os.Bundle
 import android.telecom.Conference
-import android.telecom.Conferenceable
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -15,9 +14,9 @@ import androidx.recyclerview.widget.LinearLayoutManager
 
 import com.appplatzi.conf.R
 import kotlinx.android.synthetic.main.fragment_schedule.*
-import view.adapter.ScheduleAdapter
-import view.adapter.ScheduleListener
-import viewmodel.ScheduleViewModel
+import com.appplatzi.conf.view.adapter.ScheduleAdapter
+import com.appplatzi.conf.view.adapter.ScheduleListener
+import com.appplatzi.conf.viewmodel.ScheduleViewModel
 
 /**
  * A simple [Fragment] subclass.

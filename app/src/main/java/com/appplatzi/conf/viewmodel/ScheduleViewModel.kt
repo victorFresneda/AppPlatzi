@@ -1,15 +1,15 @@
-package viewmodel
+package com.appplatzi.conf.viewmodel
 
-import android.telecom.Conference
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.appplatzi.conf.model.Conference
 import com.appplatzi.conf.network.Callback
 import com.appplatzi.conf.network.FirestoreSevice
 import java.lang.Exception
 
 class ScheduleViewModel: ViewModel(){
     val firestoreService = FirestoreSevice()
-    var listSchedule:MutableLiveData<List<Conference>> = MutableLiveData()
+    var listSchedule: MutableLiveData<List<Conference>> = MutableLiveData()
     var isLoading = MutableLiveData<Boolean>()
 
     fun refresh (){
@@ -20,18 +20,18 @@ class ScheduleViewModel: ViewModel(){
         firestoreService.getSchedule(object:Callback<List<Conference>>  {
             override fun onSuccess(result: List<Conference>?) {
                 listSchedule.postValue(result)
-                prosessFinished()
+                processFinished()
 
             }
 
             override fun onFailed(exception: Exception) {
-                prosessFinished()
+                processFinished()
             }
         })
 
     }
 
-    fun prosessFinished( ){
+    fun processFinished( ){
 
         isLoading.value = true
     }

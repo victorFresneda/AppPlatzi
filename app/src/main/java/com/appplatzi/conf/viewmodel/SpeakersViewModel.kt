@@ -1,7 +1,6 @@
-package viewmodel
+package com.appplatzi.conf.viewmodel
 
 
-import android.telecom.Conference
 import androidx.lifecycle.MutableLiveData
 import com.appplatzi.conf.model.Speaker
 import com.appplatzi.conf.network.Callback
