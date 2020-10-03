@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.core.os.bundleOf
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.get
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -64,12 +65,11 @@ class SpeakersFragment : Fragment(), SpeakerListener {
 
         }
 
-        override fun onConferenceClicked(speaker: Speaker, position: Int) {
+        override fun onSpeakerClicked(speaker: Speaker, position: Int) {
             val bundle = bundleOf("speaker" to speaker)
             findNavController().navigate(R.id.speakersDetailFragmentsDialog, bundle)
         }
 
-
-    }
+}
 
 
