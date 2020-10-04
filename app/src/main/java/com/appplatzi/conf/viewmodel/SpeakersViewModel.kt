@@ -5,9 +5,10 @@ import androidx.lifecycle.MutableLiveData
 import com.appplatzi.conf.model.Speaker
 import com.appplatzi.conf.network.Callback
 import com.appplatzi.conf.network.FirestoreSevice
+import androidx.lifecycle.ViewModel
 import java.lang.Exception
 
-class SpeakersViewModel {
+class SpeakersViewModel : ViewModel(){
     val firestoreService = FirestoreSevice()
     var listSpeaker:MutableLiveData<List<Speaker>> = MutableLiveData()
     var isLoading = MutableLiveData<Boolean>()

@@ -28,10 +28,7 @@ import kotlinx.android.synthetic.main.fragment_speakers.*
 
 class SpeakersFragment : Fragment(), SpeakerListener {
 
-
-
-
-        private lateinit var speakerAdapter: SpeakerAdapter
+    private lateinit var speakerAdapter: SpeakerAdapter
         private lateinit var viewModel: SpeakersViewModel
 
 
