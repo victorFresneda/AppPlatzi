@@ -1,8 +1,9 @@
 package com.appplatzi.conf.model
 
+import java.io.Serializable
 import java.util.*
 
-class Conference {
+class Conference:Serializable {
 
     lateinit var speaker: String
     lateinit var title: String
