@@ -41,6 +41,11 @@ class ScheduleDetailDialogFragment : DialogFragment() {
         tvScheduleDetailTitle.text = conference.title
         tvDetailCalculosDeTrazado.text = conference.description
         }
+
+    override fun onStart() {
+        super.onStart()
+        dialog?.window?.setLayout(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT)
+    }
     }
 
-}
+
