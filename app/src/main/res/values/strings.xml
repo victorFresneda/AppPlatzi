@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">Gasappy</string>
-    <string name="inicio_frag_tv_calculos_vent">Calculos de ventilación</string>
+    <string name="titulo_de_las_imagenes">Calculos de ventilación</string>
+    <string name="titulo_de_las_imagenes_2">Calculos de ventilación</string>
+    <string name="inicio_frag_tv_calculos_vent">Calculos de vacios internos</string>
     <string name="inicio_frag_tv_calculos_vacios">Calculos de vacios internos</string>
     <string name="inicio_frag_detail_tv_calculos_trazado">El objetivo, es definir los parámetros básicos que
         se seguirán en cuanto a diseño, construcción, instalación, mantenimiento y operación de redes de distribución
@@ -10,6 +12,9 @@
         con el exterior o cuando se comunica con el exterior mediante conductos verticales, cada abertura debe
         tener una area libre minima de 6 cm2 por cada kilovatio de potencia nominal agregada o conjunta de todos
         los artefactos a gas instalados en el espacio confinado.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>

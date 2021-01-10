@@ -16,7 +16,7 @@ import kotlinx.android.synthetic.main.fragment_schedule_detail_dialog.*
 /**
  * A simple [Fragment] subclass.
  */
-class ScheduleDetailDialogFragment : DialogFragment() {
+class SpeakersDetailDialogFragment : DialogFragment() {
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
