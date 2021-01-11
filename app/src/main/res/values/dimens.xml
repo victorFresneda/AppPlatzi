@@ -5,7 +5,7 @@
     <dimen name="tollbarAlto">30dp</dimen>
     <dimen name="cardCornerRadius">4dp</dimen>
     <dimen name="altoImageViewHome">250dp</dimen>
-    <dimen name="tamañoTituloHome">25sp</dimen>
+    <dimen name="tamañoTituloHome">20sp</dimen>
     <dimen name="tamañoSubTituloHome">25sp</dimen>
     <dimen name="marginHomeRightSubtitle">10dp</dimen>
     <dimen name="marginHomeLetfSubtitle">80dp</dimen>

@@ -70,14 +70,42 @@
                         android:orientation="vertical"
                         android:background="@drawable/shape_parrafo">>
                         <TextView
-                            android:id="@+id/tvDetailCalculosDeTrazado"
+                            android:id="@+id/tvDetailConferenceHour"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/inicio_frag_detail_tv_calculos_trazado"
+                            android:text="00:00"
                             android:textSize="@dimen/itemScheduleSubTitle"
                             android:textColor="@color/colorPrimary"
                             android:gravity="center_horizontal"
                             android:layout_margin="15dp" />
+                        <TextView
+                            android:id="@+id/tvDetailConferenceSpeaker"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Nombre expositor"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/itemScheduleSubTitle"
+                            android:textColor="@color/colorPrimary"
+                            android:gravity="center_horizontal"
+                            android:layout_margin="5dp" />
+                        <TextView
+                            android:id="@+id/tvDetailConferenceTag"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Tag"
+                            android:textSize="12sp"
+                            android:textColor="@color/colorPrimary"
+                            android:gravity="center_horizontal"
+                            android:layout_margin="15dp" />
+                        <TextView
+                            android:id="@+id/tvDetailConferenceDescription"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Detalle de la conferencia"
+                            android:textSize="15sp"
+                            android:textColor="@color/colorPrimary"
+                            android:gravity="center_horizontal"
+                            android:layout_margin="5dp" />
 
                     </LinearLayout>
 

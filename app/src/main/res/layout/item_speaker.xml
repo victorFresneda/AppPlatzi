@@ -10,12 +10,11 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:background="@drawable/shape_parrafo">
+        android:orientation="vertical">
         <ImageView
             android:id="@+id/ivItemSpeakerImage"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/altoImageViewHome"
+            android:layout_height="wrap_content"
             android:src="@drawable/image_view_ventilacion_direct"
             android:layout_margin="10dp"
             />
@@ -23,13 +22,13 @@
             android:id="@+id/tvItemSpeakerName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Ventilación directa"
+            android:text="Nombre Expositor"
             android:textStyle="bold"
             android:textSize="@dimen/tamañoTituloHome"
             android:textColor="@color/colorPrimaryDark"
             android:background="@color/colorText"
-            android:layout_marginRight="@dimen/marginHomeRightSubtitle"
-            android:layout_marginLeft="@dimen/marginHomeLetfSubtitle" />
+            android:gravity="center_horizontal"
+            />
 
 
 
@@ -37,9 +36,8 @@
             android:id="@+id/tvItemSpeakerWord"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Definicion segun ntc 3631 "
+            android:text="Trabajo del expositor "
             android:layout_gravity="center_horizontal"
-            android:textStyle="bold"
             android:textSize="@dimen/tamañoTituloHome"
             android:textColor="@color/colorAccent"
             android:background="@color/colorText"

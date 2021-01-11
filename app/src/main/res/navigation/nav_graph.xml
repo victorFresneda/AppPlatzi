@@ -52,7 +52,7 @@
         android:id="@+id/speakersDetailFragmentsDialog"
         android:name="com.appplatzi.conf.view.ui.fragments.SpekersDetailsDialogFragment"
         android:label="SpeakersDetailFragmentDialog"
-        tools:layout="@layout/fragment_spekers_details_dialog"/>
+        tools:layout="@layout/fragment_speakers_detail_dialog"/>
 
 
 
