@@ -39,7 +39,7 @@ class SpeakersDetailDialogFragment : DialogFragment() {
         val conference = arguments?.getSerializable("conference") as Conference
         toolbarConference.title = conference.title
         tvScheduleDetailTitle.text = conference.title
-        tvDetailCalculosDeTrazado.text = conference.description
+        tvDetailConferenceDescription.text = conference.description
     }
 
     override fun onStart() {

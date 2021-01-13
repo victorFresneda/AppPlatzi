@@ -2,20 +2,20 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-      android:id="@+id/navHomeFregment"
+      android:id="@+id/navHomeFragment"
       android:title="Inicio"
       android:icon="@drawable/ic_stars" />
     <item
-        android:id="@+id/navVentFregment"
-        android:title="Calculos de ventlación"
+        android:id="@+id/navScheduleFragment"
+        android:title="Cronograma"
         android:icon="@drawable/ic_house_vent" />
     <item
-        android:id="@+id/navVaciosFregment"
-        android:title="Vacios internos"
+        android:id="@+id/navSpeakersFragment"
+        android:title="Expositores"
         android:icon="@drawable/ic_vacios" />
     <item
-        android:id="@+id/navTrazadoFregment"
-        android:title="Calculos de trazado"
+        android:id="@+id/navMapFragment"
+        android:title="Mapa"
         android:icon="@drawable/ic_build" />
 
 </menu>

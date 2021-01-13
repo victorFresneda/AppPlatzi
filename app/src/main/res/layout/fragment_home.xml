@@ -13,7 +13,9 @@
 
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:background="@drawable/shape_parrafo">
+
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
@@ -30,7 +32,7 @@
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/altoImageViewHome"
-                        android:src="@drawable/calvent"
+                        android:src="@drawable/twitter"
                         android:background="@color/colorPrimaryDark"/>
                     <View
                         android:layout_width="match_parent"
@@ -43,10 +45,10 @@
                         android:textStyle="bold"
                         android:textSize="@dimen/tamañoTituloHome"
                         android:textColor="@color/colorPrimaryDark"
-                        android:background="@color/colorText"
-                        android:layout_marginRight="@dimen/marginHomeRightSubtitle"
-                        android:layout_marginLeft="@dimen/marginHomeLetfSubtitle"
-                        android:layout_marginTop="marginHomeRightSubtitle"/>
+                        android:background="@color/colorText"/>
+                        //android:layout_marginRight="@dimen/marginHomeRightSubtitle"
+                        //android:layout_marginLeft="@dimen/marginHomeLetfSubtitle"
+                        //android:layout_marginTop="marginHomeRightSubtitle"/>
 
                     <ImageView
                         android:layout_width="match_parent"
