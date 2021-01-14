@@ -31,7 +31,7 @@ class ScheduleViewModel: ViewModel(){
 
     }
 
-    fun processFinished( ){
+    private fun processFinished( ){
 
         isLoading.value = true
     }

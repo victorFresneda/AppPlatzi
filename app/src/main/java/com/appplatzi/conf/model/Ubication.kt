@@ -1,6 +1,6 @@
 package com.appplatzi.conf.model
 
-class ubication {
+class Ubication {
     val name = ""
     val address = ""
     val latitude = ""
